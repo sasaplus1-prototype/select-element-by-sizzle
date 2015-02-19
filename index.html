@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <title>select element by sizzle</title>
+  <style>
+    div {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sizzle()</h1>
+  <div id="div-1" class="a">div#div-1.a</div>
+  <div id="div-2" class="a">div#div-2.a</div>
+  <div id="div-3" class="a">div#div-3.a</div>
+  <div id="div-4" class="a">div#div-4.a</div>
+  <div id="div-5" class="b">div#div-5.b</div>
+  <div id="div-6" class="b">div#div-6.b</div>
+  <div id="div-7" class="b">div#div-7.b</div>
+  <div id="div-8" class="b">div#div-8.b</div>
+  <div id="div-9" class="c">div#div-9.c</div>
+  <input id="select-a" type="button" value="select .a">
+  <input id="select-b" type="button" value="select .b">
+  <input id="select-div-9" type="button" value="select #div-9">
+  <h1>Sizzle.matchesSelector</h1>
+  <label>
+    <input id="selector" type="text"> match a div#div-1.a
+  </label>
+  /
+  <span id="result">unknown</span>
+  <h1>Sizzle.matches</h1>
+  <input id="select-all-b" type="button" value="get .b from all divs">
+  <span id="result-all">unknown</span>
+  <script src="sizzle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
